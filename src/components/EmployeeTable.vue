@@ -11,6 +11,10 @@
         <tr v-for="employee in employees" :key="employee.id">
           <td>{{ employee.name }}</td>
           <td>{{ employee.email }}</td>
+          <td>
+            <button>Edit</button>
+            <button @click="$emit('delete:employee', employee.name)">Delete</button>
+          </td>
         </tr>
       </tbody>
     </table>
