@@ -57,7 +57,7 @@ export default {
     },
     editEmployee(id, updatedEmployee) {
       this.employee = this.employees.map(employee =>
-        employee.id === id ? updated : employee
+        employee.id === id ? updatedEmployee : employee
       );
     }
   }
